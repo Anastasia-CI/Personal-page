@@ -8,7 +8,7 @@
   }
 .header {
   padding: 30px;
-  width: 100%;
+  
   border-bottom: 2px solid rgb(66, 8, 94);
   background: linear-gradient(rgba(128, 194, 248, 0.8), rgba(251, 249, 252, 0.822));
 }
@@ -20,33 +20,9 @@
 p {
   padding-top: 10px;
 }
-.Education {
-  display: flex;
-  margin-top: -270px;
-}
-.textEducation {
-  margin-top: 10px;
-}
-.Hobby {
-  display: flex;
-  margin-top: 100px;
-  margin-left: 75px;
-}
-.hobbyText {
-  margin-top: 70px;
-}
-.myWay {
-  margin-top: 50px;
-  margin-left: 70px;
-}
-.name {
-  padding-top: 60px;
-  margin-left: 198px;
-}
 .box {
 display: flex;
-min-height: 95vh;
-padding-left: 150px;
+margin-left: 150px;
 margin-top: 50px;
 }
 .link1 {
@@ -63,8 +39,26 @@ main{
   color: rgb(80, 80, 80);
   background-color: rgba(141, 207, 245, 0.2);
 }
-h1 {
-  font-size: 22px;
+.Education, .Hobby {
+  display: flex;
+  margin-top: 50px;
+}
+.textEducation {
+  margin-top: 10px;
+}
+.Hobby, .myWay {
+  margin-left: 75px;
+}
+.myWay {
+  margin-top: 50px;
+}
+.textHobby {
+  margin-top: 70px;
+}
+.name {
+  padding-top: 60px;
+  margin-left: 198px;
+  font-size: 24px;
   margin-top: 10px;
 }
 .photo {
@@ -94,6 +88,12 @@ background-color: rgb(255, 255, 255, 0.9);
 box-shadow: 5px 0px 3px 4px gray;
 width: 70%;
 }
-@media screen and (max-width: 650px) {
-  .box, .headerNavigator {flex-direction: column;}
+@media screen and (max-width: 1330px) {
+  .box, .headerNavigator, .Education, .Hobby, .textHobby, .myWay {flex-direction: column; margin-top: 30px;}
+  .headerNavigator {align-items: center;}
+  #photoAbout, #photoEducation {margin-left: 78px;}
+  .textAbout {margin-left: -75px;}
+  .textEducation {margin-left: 75px;}
+  #photoHobby {max-width: 90vw; margin-left: -40px;}
+
 } 
