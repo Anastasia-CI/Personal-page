@@ -1,1 +1,2 @@
-This is my personal page
+You can find more information about me here.
+Nice to meet you!
